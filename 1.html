@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+	<head>
+		<script src="1.js"></script>
+	</head>
+
+<body>
+	<div>
+		<p>Необходимо написать алгоритм разбиения html-таблицы на две по любой строке выбранной пользователем.</p>
+		<p>Заголовок таблицы должен быть продублирован.</p>
+		<p>Если в разрыв попадает ячейка занимающая более одной строки, её содержимое должно быть продублировано в обе таблицы.</p>
+		<p>Данное задание необходимо выполнить на С++ с использованием фреймворка Qt, либо на JavaScript.</p>
+	</div>    
+
+	<div><span>Введите номер строки: </span><input type="edit" id="edit_num_str"><input type="button" value="ОК" onclick="divide_table(edit_num_str.value)"><br><br></div>
+	
+	<div>
+		<table border="" width="70%">
+			<thead>
+				<tr>
+					<td colspan="2">HEADER TD 0</td>
+					<td colspan="3">HEADER TD 1</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>STR 0, TD 0</td>
+					<td>STR 0, TD 1</td>
+					<td>STR 0, TD 2</td>
+					<td>STR 0, TD 3</td>
+					<td>STR 0, TD 4</td>
+				</tr>
+				<tr>
+					<td colspan="3" rowspan="6">STR 1, TD 0</td>
+					<td>STR 1, TD 3</td>
+					<td>STR 1, TD 4</td>
+				</tr>
+				<tr>
+					<td>STR 2, TD 3</td>
+					<td>STR 2, TD 4</td>
+				</tr>
+				<tr>
+					<td rowspan="3">STR 3, TD 3</td>
+					<td>STR 3, TD 4</td>
+				</tr>
+				<tr>
+					<td>STR 4, TD 4</td>
+				</tr>
+				<tr>
+					<td>STR 5, TD 4</td>
+				</tr>
+				<tr>
+					<td>STR 6, TD 3</td>
+					<td>STR 6, TD 4</td>
+				</tr>
+				<tr>
+					<td>STR 7, TD 0</td>
+					<td colspan="3">STR 7, TD 1</td>
+					<td>STR 7, TD 4</td>
+				</tr>
+				<tr>
+					<td>STR 8, TD 0</td>
+					<td rowspan="4">STR 8, TD 1</td>
+					<td>STR 8, TD 2</td>
+					<td>STR 8, TD 3</td>
+					<td>STR 8, TD 4</td>
+				</tr>
+				<tr>
+					<td>STR 9, TD 0</td>
+					<td rowspan="5">STR 9, TD 2</td>
+					<td>STR 9, TD 3</td>
+					<td>STR 9, TD 4</td>
+				</tr>
+				<tr>
+					<td>STR 10, TD 0</td>
+					<td colspan="2">STR 10, TD 3</td>
+				</tr>
+				<tr>
+					<td>STR 11, TD 0</td>				
+					<td>STR 11, TD 3</td>
+					<td rowspan="3">STR 11, TD 4</td>
+				</tr>
+				<tr>
+					<td>STR 12, TD 0</td>
+					<td>STR 12, TD 1</td>
+					<td>STR 12, TD 3</td>
+				</tr>
+				<tr>
+					<td>STR 13, TD 0</td>
+					<td>STR 13, TD 1</td>
+					<td>STR 13, TD 3</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+    <br>
+	<div id="div1"></div>
+    <br>
+	<div id="div2"></div>
+	
+</body></html>
